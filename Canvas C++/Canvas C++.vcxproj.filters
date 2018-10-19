@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Simple2D\Renderer\IndexBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Renderer\Renderer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Renderer\Shader.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Renderer\Texture.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Renderer\VertexArray.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Renderer\VertexBuffer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\vendor\glm\detail\glm.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\vendor\stb_image\stb_image.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple2D\Simple2D.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Aplication.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Simple2D\Dependencias\GLFW\include\GLFW\glfw3.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Dependencias\GLFW\include\GLFW\glfw3native.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Dependencias\GLWE\include\GL\eglew.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Dependencias\GLWE\include\GL\glew.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Dependencias\GLWE\include\GL\glxew.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Dependencias\GLWE\include\GL\wglew.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\IndexBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\renderer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\Shader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\texture.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\VertexArray.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\VertexBuffer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Renderer\VertexBufferLayout.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_features.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_fixes.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_noise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_swizzle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_swizzle_func.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\_vectorize.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\compute_vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\qualifier.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\setup.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_float.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_gentype.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_half.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_int.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_mat4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_vec.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_vec1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_vec2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_vec3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\detail\type_vec4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\ext\vec1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\ext\vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\bitfield.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\color_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\constants.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\epsilon.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\matrix_access.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\matrix_integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\matrix_inverse.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\matrix_transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\noise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\random.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\reciprocal.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\round.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\type_aligned.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\type_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\type_ptr.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\ulp.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtc\vec1.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\associated_min_max.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\bit.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\closest_point.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\color_encoding.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\color_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\color_space_YCoCg.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\compatibility.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\component_wise.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\dual_quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\easing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\euler_angles.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\extend.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\extended_min_max.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\exterior_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\fast_exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\fast_square_root.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\fast_trigonometry.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\functions.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\gradient_paint.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\handed_coordinate_space.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\hash.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\intersect.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\io.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\log_base.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_cross_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_decompose.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_factorisation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_interpolation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_major_storage.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_operation.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_query.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\matrix_transform_2d.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\mixed_product.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\norm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\normal.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\normalize_dot.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\number_precision.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\optimum_pow.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\orthonormalize.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\perpendicular.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\polar_coordinates.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\projection.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\quaternion.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\range.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\raw_data.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\rotate_vector.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\scalar_multiplication.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\scalar_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\spline.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\std_based_type.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\string_cast.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\texture.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\transform.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\transform2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\type_aligned.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\type_trait.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\vec_swizzle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\vector_angle.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\vector_query.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\gtx\wrap.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\common.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\exponential.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\geometric.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\integer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\matrix.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\packing.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\platform.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\trigonometric.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\simd\vector_relational.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\ext.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\fwd.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\geometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\glm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\mat4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\matrix.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\trigonometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\vec2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\vec3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\vec4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\glm\vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\vendor\stb_image\stb_image.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple2D\Simple2D.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simple2D\vendor\glm\detail\func_common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_common_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_exponential.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_exponential_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_geometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_geometric_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_integer_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_matrix.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_matrix_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_packing_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_trigonometric.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_trigonometric_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_vector_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\func_vector_relational_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_gentype.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_half.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat2x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat2x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat2x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat3x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat3x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat3x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat4x2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat4x3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat4x4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_mat4x4_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec1.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec3.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec4.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\detail\type_vec4_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\ext\vec1.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\ext\vector_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\bitfield.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\color_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\constants.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\epsilon.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\matrix_access.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\matrix_inverse.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\matrix_transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\noise.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\packing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\quaternion_simd.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\random.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\reciprocal.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\round.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\type_precision.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\type_ptr.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\ulp.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtc\vec1.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\associated_min_max.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\bit.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\closest_point.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\color_encoding.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\color_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\color_space_YCoCg.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\common.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\compatibility.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\component_wise.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\dual_quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\easing.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\euler_angles.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\extend.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\extended_min_max.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\exterior_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\fast_exponential.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\fast_square_root.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\fast_trigonometry.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\float_notmalize.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\functions.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\gradient_paint.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\handed_coordinate_space.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\hash.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\integer.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\intersect.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\io.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\log_base.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_cross_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_decompose.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_factorisation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_interpolation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_major_storage.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_operation.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_query.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\matrix_transform_2d.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\mixed_product.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\norm.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\normal.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\normalize_dot.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\number_precision.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\optimum_pow.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\orthonormalize.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\perpendicular.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\polar_coordinates.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\projection.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\quaternion.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\raw_data.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\rotate_normalized_axis.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\rotate_vector.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\scalar_relational.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\spline.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\std_based_type.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\string_cast.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\texture.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\transform.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\transform2.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\type_aligned.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\type_trait.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\vector_angle.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\vector_query.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+    <None Include="Simple2D\vendor\glm\gtx\wrap.inl">
+      <Filter>Archivos de encabezado</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Simple2D\Dependencias\GLWE\lib\Release\x64\glew32s.lib" />
+    <Library Include="Simple2D\Dependencias\GLFW\lib-vc2015\glfw3.lib" />
+  </ItemGroup>
+</Project>
