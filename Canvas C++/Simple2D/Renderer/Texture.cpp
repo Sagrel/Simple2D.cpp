@@ -4,10 +4,11 @@
 
 
 
-Shape::Shape(const std::string& path) : RendererID(0), path(path), localBuffer(nullptr), width(0), height(0), BPP(0)
+Shape::Shape(const std::string& path) : RendererID(0)
 {
 	stbi_set_flip_vertically_on_load(1);
-	localBuffer = stbi_load(path.c_str(), &width, &height, &BPP, 4);
+	int width, height, BPP;
+	unsigned char* localBuffer = stbi_load(path.c_str(), &width, &height, &BPP, 4);
 
 	glGenTextures(1, &RendererID);
 	glBindTexture(GL_TEXTURE_2D, RendererID);
@@ -45,3 +46,4 @@ void Shape::Unbind() const
 {
 	glBindTexture(GL_TEXTURE_2D, 0);
 }
+
