@@ -1,27 +1,38 @@
 #include "Simple2D.h"
 
+using namespace std;
 
 int ScreenWidth = 700;
 int ScreenHeight = 500;
 
-struct Quad
-{
-	Quad(float p[16], unsigned int i[6]);
 
-	VertexBuffer vb;
-	IndexBuffer ib;
-	VertexArray va;
-};
 
 class Canvas
 {
+private:
+	struct Quad
+	{
+		Quad(float p[16], unsigned int i[6]) : vb(p, 16 * sizeof(float)), ib(i, 6)
+		{
+			VertexBufferLayout layout;
+			layout.Push<float>(2);
+			layout.Push<float>(2);
+			va.AddBuffer(vb, layout);
+		}
+
+		VertexBuffer vb;
+		IndexBuffer ib;
+		VertexArray va;
+	};
+
 public:
 	void Init(GLFWwindow* v);
+	~Canvas();
 	   
 
 	void SetColor(double r, double g, double b);
 
-	int AddShape(std::string& path);
+	int AddShape(const string& path);
 
 	void ReSize(int w, int h);
 	void Draw(int index, glm::mat4& matrix);
@@ -31,11 +42,10 @@ public:
 private:
 
 	Renderer renderer;
-	std::unique_ptr<Shader> shader;
-	std::unique_ptr<Quad> quad;
+	Shader shader;
+	Quad* quad;
 
-	std::vector<std::unique_ptr<Shape>> shapes;
-
+	vector<Shape> shapes;
 
 	glm::mat4 proj;
 	glm::mat4 view = glm::mat4(1.0f);
@@ -78,6 +88,11 @@ void DrawLine(int x1, int y1, int x2, int y2, int w)
 	double angulo = atan2(y2 - y1, x2 - x1);
 
 	DrawShape(1, x, y, length, w, angulo);
+}
+
+void DrawLine(int x, int y, int length, float angle, int w)
+{
+	DrawShape(1, x, y, length, w, angle);
 }
 
 void DrawShape(int i, int x, int y, float w, float h, float r)
@@ -158,30 +173,31 @@ void Canvas::Init(GLFWwindow* v)
 	unsigned int indices[6] = { 0, 1, 2,
 								2, 3, 0 };
 
-	quad = std::make_unique<Quad>(posiciones, indices);
+	quad = new Quad(posiciones, indices);
 
 
-	shader = std::make_unique<Shader>("Simple2D/res/shaders/Basic.shader");
-	shapes.push_back(std::make_unique<Shape>("Simple2D/res/texturas/ChernoLogo.png"));
-	shapes.push_back(std::make_unique<Shape>("Simple2D/res/texturas/descarga.png"));
+	shader = Shader("Simple2D/res/shaders/Basic.shader");
+
+	AddShape("Simple2D/res/texturas/ChernoLogo.png");
+	AddShape("Simple2D/res/texturas/descarga.png");
 }
 
 void Canvas::SetColor(double r, double g, double b)
 {
-	shader->Bind();
-	shader->SetUniform4f("color", r, g, b, 1.0f);
+	shader.Bind();
+	shader.SetUniform4f("color", r, g, b, 1.0f);
 }
 
 void Canvas::Draw(int index, glm::mat4& model)
 {
 	glm::mat4 mvp = proj * view * model;
 
-	shader->Bind();
-	shapes[index]->Bind();
-	shader->SetUniform1i("Texture", 0);
-	shader->SetUniformMat4f("MVP", mvp);
+	shader.Bind();
+	shapes[index].Bind();
+	shader.SetUniform1i("Texture", 0);
+	shader.SetUniformMat4f("MVP", mvp);
 
-	renderer.Draw(quad->va, quad->ib, *shader);
+	renderer.Draw(quad->va, quad->ib, shader);
 }
 
 void Canvas::ReSize(int w, int h)
@@ -190,18 +206,21 @@ void Canvas::ReSize(int w, int h)
 	glViewport(0, 0, w, h);
 }
 
-int Canvas::AddShape(std::string& path) 
+int Canvas::AddShape(const std::string& path) 
 {
-	shapes.push_back(std::make_unique<Shape>(path));
+	shapes.emplace_back(Shape(path));
 
 	return shapes.size() - 1;
+}
+
+Canvas::~Canvas()
+{
+	delete quad;
 }
 #pragma endregion Canvas
 
 
 #pragma region
-
-
 
 void update(GLFWwindow* ventana)
 {
@@ -265,32 +284,26 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 #pragma endregion Input
 
 
-//Quad
 
-Quad::Quad(float p[16], unsigned int i[6]) : vb(p, 16 * sizeof(float)), ib(i, 6)
-{
-	VertexBufferLayout layout;
-	layout.Push<float>(2);
-	layout.Push<float>(2);
-	va.AddBuffer(vb, layout);
-}
+
+
 
 
 // Other
 
 
-GLFWwindow* InitOpenGL(int w, int h, std::string name = "Hola Mundo")
+GLFWwindow* InitOpenGL(int w, int h, string name = "Hola Mundo")
 {
 	if (!glfwInit())
 	{
-		std::cout << "Error al iniciar GLFW" << std::endl;
+		cout << "Error al iniciar GLFW" << endl;
 		glfwTerminate();
 	}
 
 	GLFWwindow* ventana = glfwCreateWindow(w, h, name.c_str(), NULL, NULL);
 	if (!ventana)
 	{
-		std::cout << "Error al crear ventana" << std::endl;
+		cout << "Error al crear ventana" << endl;
 		glfwTerminate();
 	}
 
@@ -298,7 +311,7 @@ GLFWwindow* InitOpenGL(int w, int h, std::string name = "Hola Mundo")
 
 	if (glewInit() != GLEW_OK)
 	{
-		std::cout << "Error al iniciar GLWE" << std::endl;
+		cout << "Error al iniciar GLWE" << endl;
 		glfwTerminate();
 	}
 
