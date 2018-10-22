@@ -25,6 +25,11 @@ Shape::Shape(const std::string& path) : RendererID(0), path(path), localBuffer(n
 	
 }
 
+Shape::Shape(Shape&& s) : RendererID(s.RendererID)
+{
+	s.RendererID = 0;
+}
+
 Shape::~Shape()
 {
 	glDeleteTextures(1, &RendererID);
